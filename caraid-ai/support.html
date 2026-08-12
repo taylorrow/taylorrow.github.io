@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CarAid AI Support</title>
+  <meta name="description" content="Support and contact information for the CarAid AI mobile app.">
+  <link rel="icon" href="app_icon.png">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f3f5f9;
+      --text: #171b24;
+      --muted: #667085;
+      --panel: #ffffff;
+      --border: #d8dde7;
+      --accent: #4165f4;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1118;
+        --text: #f2f4f8;
+        --muted: #9aa3b5;
+        --panel: #171c27;
+        --border: #2d3545;
+        --accent: #7ea2ff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    nav { margin-bottom: 20px; }
+
+    article {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--panel);
+    }
+
+    .header {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .icon {
+      width: 76px;
+      height: 76px;
+      border-radius: 20px;
+    }
+
+    h1, h2 { margin: 0; line-height: 1.2; }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); }
+    h2 { margin-top: 34px; margin-bottom: 10px; font-size: 1.35rem; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 16px; padding-left: 24px; }
+    li { margin: 8px 0; }
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    .muted { color: var(--muted); }
+
+    .contact {
+      margin-top: 36px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      background: color-mix(in srgb, var(--accent) 7%, var(--panel));
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="index.html">Back to CarAid AI</a></nav>
+    <article>
+      <div class="header">
+        <img class="icon" src="app_icon.png" alt="CarAid AI app icon">
+        <div>
+          <h1>CarAid AI Support</h1>
+          <p class="muted">Help with the app, account, purchases, and diagnostics.</p>
+        </div>
+      </div>
+
+      <h2>Before contacting support</h2>
+      <ul>
+        <li>Update CarAid AI to the latest available version.</li>
+        <li>Check your internet connection and restart the app.</li>
+        <li>For notifications, location, camera, or Bluetooth issues, verify the app permissions in your device settings.</li>
+      </ul>
+
+      <h2>Subscriptions and token purchases</h2>
+      <p>Purchases are processed by Apple App Store or Google Play. If an active subscription or completed purchase is not shown, open the subscription or token screen and use the restore or refresh option where available.</p>
+      <p>For billing, cancellation, or refund questions, use the purchase history and subscription settings of the store where the purchase was made.</p>
+
+      <h2>AI and OBD2 diagnostics</h2>
+      <p>Include the selected vehicle, model year, symptoms, OBD2 code, and any error message when contacting us. AI-generated information is for informational purposes and does not replace inspection by a qualified automotive professional.</p>
+
+      <h2>Account and data</h2>
+      <p>For account access or data requests, contact us from the email address below. You can also review the <a href="privacy-policy.html">Privacy Policy</a> and <a href="account-deletion.html">account deletion instructions</a>.</p>
+
+      <div class="contact">
+        <h2>Contact support</h2>
+        <p>Email: <a href="mailto:midisoft.game@gmail.com?subject=CarAid%20AI%20Support">midisoft.game@gmail.com</a></p>
+        <p class="muted">Please include your device platform, app version, and a short description of the issue. Do not send payment card details or authentication codes.</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
