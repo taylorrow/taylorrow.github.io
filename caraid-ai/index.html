@@ -85,8 +85,36 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+    }
+
+    .store-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
       margin-top: 8px;
     }
+
+    .store-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 54px;
+      transition: transform 160ms ease, filter 160ms ease;
+    }
+
+    .store-link:hover,
+    .store-link:focus-visible {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+    }
+
+    .store-badge {
+      display: block;
+      height: auto;
+    }
+
+    .store-badge.apple { width: 180px; }
+    .store-badge.google { width: 205px; }
 
     .button {
       display: inline-flex;
@@ -181,8 +209,15 @@
         <div class="badge">AI vehicle assistant · iOS &amp; Android</div>
         <h1>CarAid AI</h1>
         <p class="lead">Understand your car, track its condition, and make more informed maintenance decisions with AI-assisted diagnostics and practical vehicle tools.</p>
+        <div class="store-links" aria-label="Download CarAid AI">
+          <a class="store-link" href="https://apps.apple.com/app/id6793927722" rel="noopener" aria-label="Download CarAid AI on the App Store">
+            <img class="store-badge apple" src="app-store-badge.svg" alt="Download on the App Store">
+          </a>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.midigame.caraidai" rel="noopener" aria-label="Get CarAid AI on Google Play">
+            <img class="store-badge google" src="google-play-badge.png" alt="Get it on Google Play">
+          </a>
+        </div>
         <div class="actions">
-          <a class="button" href="https://play.google.com/store/apps/details?id=com.midigame.caraidai" rel="noopener">Get it on Google Play</a>
           <a class="button secondary" href="support.html">Support</a>
           <a class="button secondary" href="privacy-policy.html">Privacy Policy</a>
         </div>
