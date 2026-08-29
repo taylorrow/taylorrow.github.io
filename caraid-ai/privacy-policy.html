@@ -109,7 +109,7 @@
   <main>
     <article>
       <h1>Privacy Policy for CarAid AI</h1>
-      <p class="meta">Effective date: August 14, 2026</p>
+      <p class="meta">Effective date: August 29, 2026</p>
 
       <p>This Privacy Policy explains how CarAid AI ("CarAid AI", "the app", "we", "us", or "our") collects, uses, stores, and shares information when you use the CarAid AI mobile application.</p>
       <p>App developer: MidiSG<br>Privacy contact: <a href="mailto:midisoft.game@gmail.com">midisoft.game@gmail.com</a></p>
@@ -117,7 +117,8 @@
       <h2>1. Information We Collect and Process</h2>
       <p>Depending on the features you use and whether you use guest mode or a registered account, CarAid AI may process the following information:</p>
       <ul>
-        <li><strong>Account information:</strong> phone number, Firebase user identifier, anonymous account identifier, authentication status, subscription status, token balance, app language, time zone, and notification token.</li>
+        <li><strong>Account information:</strong> phone number, Firebase user identifier, anonymous account identifier, authentication status, subscription and trial status, token balance, app language, time zone, and notification token.</li>
+        <li><strong>Trial eligibility and abuse-prevention information:</strong> a pseudonymous identifier derived from a verified phone number, trial start and expiration dates, trial status, whether a subscription has previously been activated, and timestamps showing whether trial-related notices were sent. The trial eligibility record does not contain the phone number in readable form.</li>
         <li><strong>Vehicle information:</strong> vehicle make, model, year, mileage, fuel or engine type, transmission, VIN if you choose to provide it, service information, and insurance expiration date.</li>
         <li><strong>Diagnostic content:</strong> questions and descriptions you submit, follow-up questions, OBD2 trouble codes, diagnostic results, resolution statuses, saved FAQ items, and diagnostic history.</li>
         <li><strong>Media, files, and voice input:</strong> photos, images, audio, and other supported files that you choose to attach to a diagnostic request, as well as text produced when you use voice input.</li>
@@ -134,10 +135,11 @@
         <li>Provide AI-assisted vehicle diagnostics and OBD2 explanations.</li>
         <li>Save and synchronize garages, diagnostic history, FAQs, checkups, expenses, notification history, and other account features.</li>
         <li>Provide maps, nearby searches, location-based recommendations, and parked-vehicle tools.</li>
-        <li>Create reminders, status notifications, maintenance alerts, weekly checkup prompts, and other requested notifications.</li>
-        <li>Apply daily limits, subscription benefits, and purchased token balances.</li>
+        <li>Create reminders, status notifications, maintenance alerts, weekly checkup prompts, trial notices, and other requested notifications.</li>
+        <li>Apply daily limits, one-time trial access, subscription benefits, and purchased token balances.</li>
         <li>Process, validate, restore, and manage subscriptions and in-app purchases.</li>
         <li>Generate daily vehicle tips using vehicle, location, weather, regional, and app context where available.</li>
+        <li>Determine trial eligibility and prevent repeated promotional trials, including after app reinstallation or account recreation.</li>
         <li>Protect the app from fraud, abuse, automated traffic, and unauthorized access.</li>
         <li>Analyze usage, diagnose crashes, improve reliability, and develop app features.</li>
         <li>Comply with legal obligations and enforce applicable terms.</li>
@@ -155,13 +157,14 @@
         <li><strong>Microphone and speech recognition:</strong> to convert speech into text when you explicitly start voice input. Depending on your device and settings, audio may be processed by Apple, Google, or another system speech-recognition service. CarAid AI receives the recognized text and does not store the raw microphone recording created for dictation.</li>
         <li><strong>Files and audio attachments:</strong> to select supported audio or document content that you explicitly attach to a diagnostic request. Unlike temporary dictation audio, an attached audio file is uploaded and processed as part of that request.</li>
         <li><strong>Bluetooth:</strong> to connect to a compatible OBD2 adapter when you use scanner functionality.</li>
-        <li><strong>Notifications:</strong> to deliver diagnostic, maintenance, weekly checkup, and other app reminders.</li>
+        <li><strong>Notifications:</strong> to deliver diagnostic, maintenance, weekly checkup, trial, subscription, and other app reminders.</li>
       </ul>
       <p>You can deny or revoke permissions in your device settings. Some features may not work without the relevant permission. If you do not allow microphone or speech-recognition access, you can continue entering diagnostic questions with the keyboard.</p>
       <p>Your saved parked-vehicle coordinates are stored locally on your device. If you choose to share the parked location, the app creates shareable text containing a Google Maps link.</p>
 
       <h2>5. Accounts and Guest Mode</h2>
       <p>Registered accounts use phone authentication and allow supported data to be stored in the cloud and synchronized across devices signed in to the same account.</p>
+      <p>Eligible newly registered users may receive one three-day period of full access. Trial eligibility and expiration are determined by the backend using server-controlled account and trial dates, rather than only information stored on the device.</p>
       <p>Guest mode uses an anonymous Firebase account and provides limited features and usage allowances. Guest data may be associated with an anonymous identifier and device installation. If you sign out, clear app data, reinstall the app, or change devices, some guest data may become inaccessible or be removed. Locally stored preferences are generally removed when app data is cleared or the app is uninstalled.</p>
 
       <h2>6. Analytics, Crash Reporting, Security, and Remote Configuration</h2>
@@ -170,7 +173,10 @@
       <p>Analytics events may describe the feature or action used, whether it succeeded or failed, guest or registered account mode, free or premium access tier, and subscription plan. For registered accounts, the Firebase user identifier may be assigned as the analytics user identifier so events can be associated with the same account across sessions and supported devices.</p>
       <p>Custom analytics events are not designed to include your phone number, VIN, diagnostic question text, attached media, or precise location. We use analytics to measure feature adoption and user flows, distinguish free and premium usage, identify failures, improve reliability, and guide product development. We do not use this analytics implementation for third-party advertising or cross-app tracking.</p>
 
-      <h2>7. In-App Purchases and Subscriptions</h2>
+      <h2>7. Free Trial, In-App Purchases, and Subscriptions</h2>
+      <p>The three-day full-access trial is a one-time promotional benefit for eligible new registered users. We use a pseudonymous identifier derived from the verified phone number to recognize prior trial eligibility without storing the readable phone number in the trial ledger. Reinstalling the app, clearing local data, signing in on another device, deleting an account, or creating another account with the same verified phone number does not restart the trial.</p>
+      <p>When notifications are enabled, we may send a welcome notification after the trial starts and a reminder when approximately one day remains. Opening these notifications may navigate to the Today or subscription screen. You can disable notifications in the app or device settings.</p>
+      <p>If a subscription is successfully activated, the trial is no longer monitored as a separate promotional entitlement. A record that a subscription was previously activated may remain in the trial eligibility ledger to prevent the trial from being granted later.</p>
       <p>Subscriptions and token purchases are processed by Apple through the App Store or by Google through Google Play. Apple or Google processes your payment details. CarAid AI receives purchase and entitlement information needed to verify transactions, provide purchased benefits, prevent duplicate crediting, and restore purchases.</p>
       <p>Subscription management, cancellation, billing, and refunds are governed by the applicable store's terms and settings.</p>
 
@@ -194,7 +200,10 @@
 
       <h2>10. Data Retention and Deletion</h2>
       <p>We retain cloud data while it is needed to provide the app, maintain an account, comply with legal obligations, resolve disputes, enforce agreements, prevent abuse, and preserve transaction integrity. Retention periods may vary by data type.</p>
-      <p>Registered users can remove supported garage and diagnostic history data through the app settings. Individual records may also provide deletion controls where available. Certain purchase, security, anti-fraud, usage-limit, backup, and system log records may be retained where reasonably necessary or legally required.</p>
+      <p>Registered users can delete their account in the app and can remove supported garage and diagnostic history data through the app settings. Individual records may also provide deletion controls where available. Deleting a CarAid AI account does not cancel a subscription with Apple or Google; store subscriptions must be canceled in the applicable store.</p>
+      <p>When a registered account is deleted, we delete its Firebase authentication account and associated operational user data, including vehicles, diagnostics, notifications, preferences, token balance, and registered notification tokens, subject to the exceptions described below.</p>
+      <p class="notice"><strong>Trial abuse-prevention record:</strong> after account deletion, we retain the pseudonymous trial identifier and trial eligibility history, including trial dates and whether a subscription was previously activated. We detach the Firebase user identifier from this record. We retain this limited record while the one-time trial program operates and for as long as reasonably necessary to prevent repeated promotional access, investigate abuse, and protect the integrity of the service. It is not used for advertising.</p>
+      <p>Certain store transaction identifiers, purchase validation records, security records, anti-fraud records, usage-limit records, protected backups, and system logs may also be retained where reasonably necessary or legally required. Store purchase ownership is removed from the deleted CarAid AI account where supported, but transaction records may remain for purchase integrity, fraud prevention, accounting, dispute resolution, or legal compliance.</p>
       <p>You may request access to or deletion of personal data associated with CarAid AI by contacting <a href="mailto:midisoft.game@gmail.com">midisoft.game@gmail.com</a>. We may need to verify your identity before completing a request.</p>
 
       <h2>11. Data Security and International Processing</h2>
